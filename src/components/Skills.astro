@@ -1,0 +1,55 @@
+---
+// Minimal Skills component
+const skills = [
+  { name: "JavaScript", category: "Languages", icon: "js" },
+  { name: "TypeScript", category: "Languages", icon: "ts" },
+  { name: "React", category: "Frontend", icon: "react" },
+  { name: "Next.js", category: "Frontend", icon: "nextjs" },
+  { name: "React Native", category: "Mobile", icon: "react" },
+  { name: "Astro.js", category: "Frontend", icon: "astro" },
+  { name: "Tailwind CSS", category: "Styling", icon: "tailwind" },
+  { name: "Node.js", category: "Backend", icon: "nodejs" },
+  { name: "Express.js", category: "Backend", icon: "express" },
+  { name: "MongoDB", category: "Database", icon: "mongodb" },
+  { name: "Prisma", category: "Database", icon: "prisma" },
+  { name: "SQL", category: "Database", icon: "mysql" }, // Using mysql icon for generic SQL
+];
+
+const categories = [
+  "Languages",
+  "Frontend",
+  "Mobile",
+  "Backend",
+  "Database",
+  "Styling",
+];
+---
+
+<section id="skills" class="py-16 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-4 ">
+      <h2 class="text-2xl font-bold mb-3 text-[var(--text-primary)]">
+        Technical Skills
+      </h2>
+      <p class="text-[var(--text-secondary)] text-xs">
+        Technologies I work with
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-start gap-2">
+      {
+        skills.map((skill) => (
+          <span class="flex items-center gap-2 px-4 py-2 border border-[var(--border-color)] rounded-full text-sm text-[var(--text-secondary)] bg-[var(--bg-secondary)]  hover:border-neutral-400 transition-all cursor-default">
+            <img
+              src={`https://skillicons.dev/icons?i=${skill.icon}`}
+              alt={skill.name}
+              class="w-5 h-5"
+              loading="lazy"
+            />
+            {skill.name}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</section>

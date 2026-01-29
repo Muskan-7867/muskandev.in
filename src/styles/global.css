@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #eeecec;
+  --text-primary: #000000;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #000000;
+  --bg-secondary: #171717;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: #4c4c4d;
+}
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrain.woff2') format('woff2');
+
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family:"JetBrainsMono", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

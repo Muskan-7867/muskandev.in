@@ -1,0 +1,58 @@
+---
+// Minimal Hero component with circular image
+---
+
+<section id="hero" class="flex items-center justify-center px-4 pt-18">
+  <div
+    class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-4"
+  >
+    <!-- Circular Image Placeholder -->
+    <div class="flex-shrink-0 mb-6 md:mb-0">
+      <div
+        class="w-28 h-28 rounded-full border-2 border-[var(--border-color)] overflow-hidden bg-[var(--bg-secondary)] flex items-center justify-center"
+      >
+        <!-- Placeholder for image - replace with actual image -->
+        <span class="text-6xl font-light text-[var(--text-secondary)]">M</span>
+      </div>
+    </div>
+
+    <!-- Introduction and Content -->
+    <div class="text-center md:text-left">
+      <h1
+        class="text-4xl md:text-3xl font-bold mb-2 text-[var(--text-primary)]"
+      >
+        Muskan
+      </h1>
+
+      <p class="text-sm md:text-xs text-[var(--text-secondary)] mb-2">
+        Full Stack Developer
+      </p>
+
+      <p
+        class="text-base md:text-xs text-[var(--text-secondary)] max-w-2xl mb-6 leading-relaxed"
+      >
+        Crafting seamless digital experiences with modern web technologies.
+        Specializing in building scalable applications using React, Next.js, and
+        Node.js.
+      </p>
+
+      <!-- Simple CTA -->
+      <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+        <a href="#experience">
+          <button
+            class="px-6 py-1.5 text-xs flex justify-center items-center border border-neutral-300 bg-black dark:bg-white text-black rounded-full font-medium transition-opacity"
+          >
+            Open CV
+          </button>
+        </a>
+        <a href="#skills">
+          <button
+            class="px-6 py-1.5 text-xs flex justify-center items-center border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-primary)] rounded-full font-medium transition-opacity"
+          >
+            Skills
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

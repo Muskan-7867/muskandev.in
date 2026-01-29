@@ -1,0 +1,39 @@
+---
+// Minimal Education component
+const education = {
+  degree: "Bachelor of Technology (B.Tech)",
+  branch: "Electronics and Communication Engineering (ECE)",
+  college: "DAV Institute of Engineering and Technology",
+  period: "2021 - 2025",
+};
+---
+
+<section id="education" class=" py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-16">
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-3 text-[var(--text-primary)]"
+      >
+        Education
+      </h2>
+      <p class="text-[var(--text-secondary)]">Academic background</p>
+    </div>
+
+    <div
+      class="border border-[var(--border-color)] rounded-lg p-8 hover:bg-[var(--bg-secondary)] transition-colors"
+    >
+      <h3 class="text-2xl font-bold text-[var(--text-primary)] mb-2">
+        {education.degree}
+      </h3>
+      <p class="text-lg text-[var(--text-secondary)] mb-3">
+        {education.branch}
+      </p>
+      <p class="text-[var(--text-secondary)] mb-2">
+        {education.college}
+      </p>
+      <p class="text-sm text-[var(--text-secondary)]">
+        {education.period}
+      </p>
+    </div>
+  </div>
+</section>

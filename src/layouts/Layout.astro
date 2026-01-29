@@ -1,23 +1,43 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>Muskan - Full Stack Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my work experience and projects."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, React, Next.js, Node.js, MERN Stack, Web Developer, Muskan"
+    />
+    <meta name="author" content="Muskan" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Muskan - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies."
+    />
+    <meta property="og:type" content="website" />
+
+    <script is:inline>
+      // Initialize theme before page renders to prevent flash
+      const theme = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", theme);
+    </script>
+  </head>
+  <body class="flex flex-col items-center justify-center">
+    <slot />
+  </body>
+</html>
