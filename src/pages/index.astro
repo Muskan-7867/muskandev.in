@@ -3,19 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
 import Skills from "../components/Skills.astro";
+import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
+import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-  <div class="max-w-2xl border-x border-x-neutral-800  relative">
+  <div class="max-w-2xl border-x border-x-neutral-800 relative">
     <Navbar />
 
     <Hero />
     <Skills />
     <Experience />
+    <Projects />
+
     <Education />
+    <Contact />
   </div>
   <Footer />
 </Layout>
