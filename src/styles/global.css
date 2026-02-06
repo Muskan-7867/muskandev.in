@@ -6,7 +6,7 @@
   --bg-secondary: #eeecec;
   --text-primary: #000000;
   --text-secondary: #6b7280;
-  --border-color: #e5e7eb;
+  --border-color: #e5e5e5;
 }
 
 [data-theme="dark"] {
@@ -14,7 +14,7 @@
   --bg-secondary: #171717;
   --text-primary: #ffffff;
   --text-secondary: #9ca3af;
-  --border-color: #4c4c4d;
+  --border-color: #262626;
 }
 
 /* Register your custom font family and tell the browser where to find it. */
