@@ -1,32 +1,44 @@
 ---
 const projects = [
+
+  {
+    title: "Dilbagh Sweets",
+    description:
+      "A complete e-commerce website for sweets and bakery products, designed to provide customers with a smooth and engaging online shopping experience. The platform includes product categories, detailed product pages, secure user authentication, shopping cart and checkout functionality, online payment integration, and order management features. ",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React Query", "Zustand", "shadcn/ui", "motion", "Prisma", "Hono.js", "Node.js", "JWT", "Nodemailer", "Om Storage"],
+    link: "https://dilbaghsweets.com",
+    github: "https://github.com/Deepakcodez/dilbaghsweets",
+    image: "/images/dilbagh.png",
+    isMobileApp: true,
+  },
      {
     title: "Coyote Cricket",
     description:
       "An e-commerce website focused on cricket accessories and equipment, featuring product categories, detailed product pages, and a clean UI for sports enthusiasts.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Mongo DB"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Mongo DB", "React Query", "Zustand", "shadcn/ui", "motion", "Cloudinary"],
     link: "https://www.coyotecricket.com",
     github: "https://github.com/Muskan-7867/coyete-cricket",
     image: "/images/coyote.png",
   },
-  {
-    title: "Omeg Bazaar",
-    description:
-      "A complete e-commerce shopping application with product listings, cart functionality, secure checkout, and user authentication, designed for a smooth online shopping experience.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Mongo DB"],
-    link: "https://omegbazaar.com",
-    github: "https://github.com/Muskan-7867/omeg-bazaar-website",
-    image: "/images/home.png",
-  },
+
  
   {
-    title: "Passport Size Image Generator",
+    title: "Banarsi Lehnga House",
     description:
-      "A passport size image generator website for generating passport size images for users.",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-    link: "https://passport-size-image-gen.vercel.app/",
+      "Banarsi Lehnga House is a comprehensive e-commerce platform designed for the sale of ethnic Indian wear, specializing in Banarasi lehengas, sarees, and related traditional apparel.  ",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "shadcn/ui", "motion"],
+    link: "https://banarsilehngahouse.com",
+    github: "https://github.com/Muskan-7867/Banarasi-lehanga",
+    image: "/images/banarasi.png",
+  },
+    {
+    title: "Snap Passport",
+    description:
+      "Snap Passport is a comprehensive platform designed for the sale and creation of passport photos, offering users a fast and convenient way to generate professional passport-sized images online. The platform includes features such as AI-based photo cropping and background adjustment, multiple country-specific passport size formats, secure image upload and processing, instant preview generation, and high-quality downloadable prints.",
+    tech: ["Next.js", "Tailwind CSS", "TypeScript", "shadcn/ui", "motion"],
+    link: "https://passport-size-image-gen.vercel.app",
     github: "https://github.com/Muskan-7867/passport-size-image-gen",
-    image: "/images/passportimg.png",
+    image: "/images/snap.png",
   },
 ];
 ---
@@ -42,14 +54,14 @@ const projects = [
     {projects.map((project, index) => (
       <div
        
-        class="flex items-center rounded-lg border border-[var(--border-color)]  p-4 transition-transform "
+        class="flex items-center rounded-lg transition-transform "
       >
         <!-- Image on the left -->
-        <a
+        {/* <a
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          class="flex-shrink-0 w-24 h-24 md:w-52 md:h-48 overflow-hidden rounded-lg"
+          class="flex-shrink-0 w-24 h-24 md:w-52 md:h-38 overflow-hidden rounded-lg"
           aria-label={`View ${project.title}`}
         >
           <img
@@ -57,10 +69,10 @@ const projects = [
             alt={project.title}
             class="w-full h-full object-cover"
           />
-        </a>
+        </a> */}
 
         <!-- Text content on the right -->
-        <div class="ml-4 flex-1 flex flex-col justify-between h-full">
+        <div class=" flex-1 flex flex-col justify-between h-full">
           <div>
             <h3 class="text-lg font-semibold text-[var(--text-primary)] mb-1">{project.title}</h3>
             <p class="text-xs text-[var(--text-secondary)] mb-4">{project.description}</p>

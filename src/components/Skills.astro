@@ -6,10 +6,11 @@ const skills = [
   { name: "React", category: "Frontend", icon: "react" },
 
   { name: "Next.js", category: "Frontend", icon: "nextjs" },
-  { name: "React Native", category: "Mobile", icon: "react" },
-  { name: "Flutter", category: "Mobile", icon: "flutter" },
+  { name: "Expo", category: "Mobile", icon: "expo", customIcon: "https://cdn.simpleicons.org/expo/1C1E24/EAECEF"  , size:{width:"12px", height:"12px"}},
 
-  { name: "Astro.js", category: "Frontend", icon: "astro" },
+  { name: "React Native", category: "Mobile", icon: "react" },
+
+  // { name: "Astro.js", category: "Frontend", icon: "astro" },
   { name: "Tailwind CSS", category: "Styling", icon: "tailwind" },
 
   { name: "Node.js", category: "Backend", icon: "nodejs" },
@@ -19,7 +20,7 @@ const skills = [
 
   { name: "Prisma", category: "Database", icon: "prisma" },
 
-  { name: "SQL", category: "Database", icon: "mysql" }, // Using mysql icon for generic SQL
+  { name: "PostgreSQL", category: "Database", icon: "mysql" }, // Using mysql icon for generic SQL
   { name: "Git", category: "Version Control", icon: "git" },
   { name: "GitHub", category: "Version Control", icon: "github" },
 ];
@@ -50,9 +51,10 @@ const categories = [
         skills.map((skill) => (
           <span class="flex items-center gap-2 px-4 py-2 border border-[var(--border-color)] rounded-full text-sm text-[var(--text-secondary)] bg-[var(--bg-secondary)]  hover:border-neutral-400 transition-all cursor-default">
             <img
-              src={`https://skillicons.dev/icons?i=${skill.icon}`}
+              src={skill.customIcon || `https://skillicons.dev/icons?i=${skill.icon}`}
               alt={skill.name}
               class="w-5 h-5"
+              style={skill.size}
               loading="lazy"
             />
             <p class="text-xs">{skill.name}</p>
